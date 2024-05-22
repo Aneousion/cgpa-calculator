@@ -27,7 +27,7 @@ function App() {
     setTotalCourseCount((prevCount) => prevCount + 1);
   };
 
-  const [courses, setCourses] = useState<Record<number, Course>>({});
+  const [_courses, setCourses] = useState<Record<number, Course>>({});
 
   const [scoresAndUnits, setScoresAndUnits] = useState<
     Record<number, ScoreAndUnit>
