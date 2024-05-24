@@ -1,6 +1,7 @@
 import { useState} from "react";
 import Inputs from "./components/inputs";
 import { calculateCGPA, calculateGPA } from "./utils";
+import { Analytics } from "@vercel/analytics/react"
 interface ScoreAndUnit {
   score: number;
   unit: number;
@@ -28,7 +29,7 @@ function App() {
   };
 
   const [_courses, setCourses] = useState<Record<number, Course>>({});
-
+  
   const [scoresAndUnits, setScoresAndUnits] = useState<
     Record<number, ScoreAndUnit>
   >({});
@@ -74,6 +75,7 @@ function App() {
 
   return (
     <>
+    <Analytics/>
       <div className="navbar bg-base-100">
         <div className="navbar-start"></div>
         <div className="navbar-center">
