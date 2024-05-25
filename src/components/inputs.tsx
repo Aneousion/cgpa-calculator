@@ -60,7 +60,7 @@ export default function Inputs({
     <>
       <input
         type="text"
-        placeholder="Course Name or Code"
+        placeholder="Course Name or Code (Optional)"
         className="input input-bordered mb-2 input-sm mt-3 w-full max-w"
         maxLength={50}
         value={course}
